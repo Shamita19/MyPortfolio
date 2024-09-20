@@ -145,8 +145,8 @@ img {
 }
 
 .hero-container .profile-img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin-bottom: 1rem;
   object-fit: cover;
@@ -157,13 +157,13 @@ img {
 }
 
 .hero-container .hero-text h2 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 550;
   margin-bottom: 1rem;
 }
 
 .hero-container .hero-text p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -195,8 +195,8 @@ img {
 
 /* Main Heading */
 .about-container h2 {
-  font-size: 2.2rem; /* Slightly smaller heading */
-  font-weight: 500;
+  font-size: 2rem; /* Slightly smaller heading */
+  font-weight: 400;
   margin-bottom: 2rem;
   color: #fff; /* White color for the heading */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for a fancier look */
@@ -314,8 +314,8 @@ img {
 }
 
 .skills-container h2 {
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -334,7 +334,7 @@ img {
 }
 
 .skill-category h3 {
-  font-size: 1.5rem; /* Decrease the font size of the category headings */
+  font-size: 1.2rem; /* Decrease the font size of the category headings */
   font-weight: 400;
   background-color: hsl(233, 100%, 98%);
   color: #000000;
@@ -395,8 +395,8 @@ img {
 }
 
 .projects-container h2 {
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -448,7 +448,7 @@ img {
 }
 
 .project-card p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   color: #b3b3b3;
 }
@@ -461,7 +461,7 @@ img {
 
 .contact-container h2 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
