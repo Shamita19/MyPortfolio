@@ -323,7 +323,7 @@ img {
 .grid-categories {
   display: flex;
   justify-content: space-around;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   flex-wrap: wrap; /* Allow wrapping if the screen is too small */
   gap: 2rem;
 }
@@ -335,12 +335,12 @@ img {
 }
 
 .skill-category h3 {
-  font-size: 1.5rem; /* Decrease the font size of the category headings */
+  font-size: 1rem; /* Decrease the font size of the category headings */
   font-weight: 300;
   background-color: hsl(233, 100%, 98%);
   color: #000000;
   padding: 0.5rem; /* Reduce padding */
-  border-radius: 10px;
+  border-radius: 8px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -375,13 +375,17 @@ img {
   align-items: center;
   gap: 0.5rem; /* Reduce gap between icon and text */
   padding: 0.5rem; /* Reduce padding */
-  border-radius: 5px; /* Slightly reduce border radius */
+  border-radius: 3px; /* Slightly reduce border radius */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Reduce box shadow */
   transition: all 0.5s ease-in-out;
 }
 
 .skill-card i {
   font-size: 0.7rem; /* Decrease icon size */
+}
+
+.skill-card p{
+  font-size: 0.7rem
 }
 
 .skill-card:hover {
