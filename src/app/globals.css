@@ -281,7 +281,7 @@ img {
 /* Paragraphs in Back Face */
 .flex-about .card-back p {
   font-size: 1rem; /* Reduced text size */
-  line-height: 1.2; /* More compact line spacing */
+  line-height: 1.3; /* More compact line spacing */
   text-align: center; /* Center-align text for better readability */
   overflow-y: auto; /* Enable scrolling if content overflows */
   max-height: 60vh; /* Adjust height to handle text overflow */
