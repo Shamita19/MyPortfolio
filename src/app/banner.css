@@ -1,0 +1,14 @@
+/* src/styles/banner.css */
+
+.gradient-banner {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+  color: white;
+  padding: 3rem 1rem; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.gradient-banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
