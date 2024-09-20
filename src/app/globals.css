@@ -108,7 +108,7 @@ img {
 }
 
 .nav-links {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: var(--font-semi);
   cursor: pointer; /* Hand pointer on hover */
 }
@@ -273,7 +273,7 @@ img {
 
 /* Subheadings in Front Face */
 .flex-about .card-front h3 {
-  font-size: 1rem; /* Reduced font size */
+  font-size: 1.5rem; /* Reduced font size */
   font-weight: 300;
   text-align: center;
 }
@@ -281,7 +281,7 @@ img {
 /* Paragraphs in Back Face */
 .flex-about .card-back p {
   font-size: 1rem; /* Reduced text size */
-  line-height: 1.5; /* More compact line spacing */
+  line-height: 1.2; /* More compact line spacing */
   text-align: center; /* Center-align text for better readability */
   overflow-y: auto; /* Enable scrolling if content overflows */
   max-height: 60vh; /* Adjust height to handle text overflow */
@@ -302,7 +302,7 @@ img {
   }
 
   .flex-about .card-back p {
-    font-size: 1.5rem; /* Slightly larger text size on wider screens */
+    font-size: 1rem; /* Slightly larger text size on wider screens */
   }
 }
 
@@ -323,6 +323,7 @@ img {
 .grid-categories {
   display: flex;
   justify-content: space-around;
+  font-size: 1.3rem;
   flex-wrap: wrap; /* Allow wrapping if the screen is too small */
   gap: 2rem;
 }
@@ -380,7 +381,7 @@ img {
 }
 
 .skill-card i {
-  font-size: 1rem; /* Decrease icon size */
+  font-size: 0.7rem; /* Decrease icon size */
 }
 
 .skill-card:hover {
@@ -443,12 +444,12 @@ img {
 }
 
 .project-card h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .project-card p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   color: #b3b3b3;
 }
