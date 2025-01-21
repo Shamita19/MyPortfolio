@@ -79,7 +79,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 0.5rem;
+  padding: 0.2rem 0.3rem;
   background-color: hwb(122 14% 66%);
   position: fixed;
   width: 100%;
@@ -121,7 +121,7 @@ img {
   background-color: #FFCC1A;
   color: hsl(0, 0%, 0%);
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.5s ease-in-out;
