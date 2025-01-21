@@ -148,8 +148,8 @@ img {
 
 /* Profile Image */
 .hero-container .profile-img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%; /* Circular image */
   margin-bottom: 1rem;
   object-fit: cover; /* Ensure the image fits inside the circle */
@@ -166,16 +166,16 @@ img {
 }
 
 .hero-container .hero-text h2 {
-  font-size: 2.5rem; /* Large heading size */
+  font-size: 2rem; /* Large heading size */
   font-weight: 600; /* Slightly bolder text */
   margin-bottom: 1rem;
   color: hwb(0 0% 100%); /* Green text color for the main heading */
 }
 
 .hero-container .hero-text p {
-  font-size: 1.5rem; /* Adjust text size for readability */
+  font-size: 1.3rem; /* Adjust text size for readability */
   font-weight: 400;
-  margin-bottom: 1.5rem; /* Add spacing between paragraphs */
+  margin-bottom: 1rem; /* Add spacing between paragraphs */
   line-height: 1.6; /* Improve readability with line height */
   color: #333333; /* Slightly darker text color for contrast */
 }
