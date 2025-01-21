@@ -104,7 +104,7 @@ img {
 }
 
 .nav-item {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .nav-links {
@@ -166,8 +166,8 @@ img {
 }
 
 .hero-container .hero-text h2 {
-  font-size: 2rem; /* Large heading size */
-  font-weight: 600; /* Slightly bolder text */
+  font-size: 1.7rem; /* Large heading size */
+  font-weight: 500; /* Slightly bolder text */
   margin-bottom: 1rem;
   color: hwb(0 0% 100%); /* Green text color for the main heading */
 }
