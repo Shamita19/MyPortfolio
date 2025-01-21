@@ -7,11 +7,11 @@ const Hero = () => {
     <div className="hero-container" id="home">
       <img src="/Shamita-profile.jpeg" alt="Profile" className="profile-img" />
       <div className="hero-text">
-        <h2>Welcome to My Portfolio</h2>
+        <h2>Hello! I'm Shamita Naidu</h2>
         <p>
         <Typewriter
           options={{
-            strings: ['Developer', 'AI/ML Engineer', 'Problem Solver', 'Coffee Connoisseur'],
+            strings: ['Developer', 'AI/ML Engineer', 'Problem Solver', 'Researcher'],
             autoStart: true,
             loop: true,
           }}

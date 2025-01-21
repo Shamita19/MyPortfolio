@@ -32,7 +32,7 @@ const NavigationBar = () => {
               duration={500}
               onClick={toggleNav}
             >
-              About
+              Experience
             </Link>
           </li>
           

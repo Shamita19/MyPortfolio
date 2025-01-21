@@ -45,8 +45,8 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: #1D1E20;
-  color: #DADADB;
+  background-color: hsl(0, 0%, 100%);
+  color: hwb(0 0% 100%);
   margin: 0 auto;
   padding: 0;
 }
@@ -80,7 +80,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.5rem;
-  background-color: #1D1E20;
+  background-color: hwb(122 14% 66%);
   position: fixed;
   width: 100%;
   top: 0;
@@ -114,12 +114,12 @@ img {
 }
 
 .nav-links:hover {
-  color: var(--first-color); /* Optional: Change color on hover */
+  color: hwb(115 33% 41%); /* Optional: Change color on hover */
 }
 
 .cta-btn {
   background-color: #FFCC1A;
-  color: #1D1E20;
+  color: hsl(0, 0%, 0%);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 1rem;
@@ -176,20 +176,20 @@ img {
 }
 
 .hero-container .social-icons a {
-  color: #9B9C9D;
+  color:hsl(111, 16%, 26%);
   font-size: 2rem;
   transition: all 0.5s ease-in-out;
 }
 
 .hero-container .social-icons a:hover {
-  color: #DADADB;
+  color: hsl(128, 13%, 52%);
 }
 
 /* About Container */
 .about-container {
   padding: 3rem 0; /* Reduced vertical padding */
   text-align: center;
-  color: white; /* Text color for contrast */
+  color: #ffffff; /* Text color for contrast */
   overflow-x: hidden; /* Hide any overflow */
 }
 
@@ -198,8 +198,8 @@ img {
   font-size: 2rem; /* Slightly smaller heading */
   font-weight: 400;
   margin-bottom: 2rem;
-  color: #fff; /* White color for the heading */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for a fancier look */
+  color: hsl(0, 0%, 0%); /* White color for the heading */
+  text-shadow: 2px 2px 4px #aca5a5b3; /* Text shadow for a fancier look */
 }
 
 /* Card Container */
@@ -253,6 +253,7 @@ img {
   border-radius: 10px; /* Reduced border radius for compact look */
   padding: 1rem; /* Reduced padding */
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
   justify-content: center;
   color: hsl(0, 0%, 100%); /* Text color */
@@ -262,20 +263,36 @@ img {
 
 /* Front Face Styling */
 .flex-about .card-front {
-  background: linear-gradient(135deg, rgb(20, 39, 126), rgb(33, 150, 243)); /* Blue gradient for the front face */
+  background: linear-gradient(135deg, hsl(129, 66%, 14%), rgb(112, 131, 111)); /* Blue gradient for the front face */
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center-align items */
+  justify-content: center; /* Center-align items vertically */
+  padding: 1.5rem; /* Add some padding */
+  gap: 0.5rem; /* Add spacing between child elements */
 }
 
-/* Back Face Styling */
-.flex-about .card-back {
-  background: linear-gradient(135deg, rgba(39, 40, 44, 0.995), rgba(58, 65, 73, 0.995)); /* Darker gradient for the back face */
-  transform: rotateY(180deg);
-}
-
-/* Subheadings in Front Face */
+/* Ensure h3 and p elements in card-front are on separate lines */
 .flex-about .card-front h3 {
   font-size: 1.5rem; /* Reduced font size */
   font-weight: 300;
   text-align: center;
+  margin: 0; /* Remove default margins */
+  margin-bottom: 0.5rem; /* Add space below the heading */
+}
+
+.flex-about .card-front p {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 300;
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margins */
+  margin-bottom: 0.5rem; /* Add consistent spacing */
+}
+
+/* Back Face Styling */
+.flex-about .card-back {
+  background: linear-gradient(135deg, hsla(122, 14%, 42%, 0.996), #718371fe); /* Darker gradient for the back face */
+  transform: rotateY(180deg);
 }
 
 /* Paragraphs in Back Face */
@@ -321,77 +338,67 @@ img {
 
 /* Grid Categories */
 .grid-categories {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5rem;
-  flex-wrap: wrap; /* Allow wrapping if the screen is too small */
-  gap: 2rem;
+  display: flex; /* Align categories next to each other horizontally */
+  justify-content: center; /* Center the categories */
+  gap: 5rem; /* Add space between the categories */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 /* Skill Category */
 .skill-category {
-  width: 15%; /* Make the category columns narrower */
-  cursor: pointer;
+  text-align: center; /* Center-align text and skills */
 }
 
 .skill-category h3 {
-  font-size: 1rem; /* Decrease the font size of the category headings */
-  font-weight: 300;
-  background-color: hsl(233, 100%, 98%);
-  color: #000000;
-  padding: 0.5rem; /* Reduce padding */
-  border-radius: 8px;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 1.5rem; /* Category heading size */
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.skill-category:hover h3 {
-  background-color: hsl(220, 84%, 31%);
-}
-
-/* Skill Booklet */
-.skill-booklet {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem; /* Decrease gap between skill cards */
-  padding: 0 0.5rem; /* Reduce padding */
-}
-
-/* Expanded Booklet */
-.skill-booklet.open {
-  max-height: 300px; /* Reduce max height */
-  padding: 0.5rem;
-  margin-top: 0.5rem;
+/* Skills Grid */
+.skills-grid {
+  display: flex; /* Align skills horizontally */
+  gap: 1rem; /* Add space between skill cards */
+  justify-content: center; /* Center-align skills */
+  flex-wrap: wrap; /* Allow skills to wrap if needed */
 }
 
 /* Skill Cards */
 .skill-card {
-  background-color: #fffbfe;
-  color: #1d1e20;
+  background-color: transparent; /* Transparent background */
+  color: hwb(133, 39%, 44%); /* Green color for text and icons */
+  border: 2px solid hwb(133, 39%, 44%); /* Green border */
+  width: 100px; /* Fixed width for square shape */
+  height: 100px; /* Fixed height for square shape */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem; /* Reduce gap between icon and text */
-  padding: 0.5rem; /* Reduce padding */
-  border-radius: 3px; /* Slightly reduce border radius */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Reduce box shadow */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   transition: all 0.5s ease-in-out;
+  border-radius: 0; /* Square cards */
 }
 
 .skill-card i {
-  font-size: 0.7rem; /* Decrease icon size */
+  font-size: 2rem; /* Icon size */
+  color: hwb(133 39% 44%); /* Green color for icons */
 }
 
-.skill-card p{
-  font-size: 0.7rem
+.skill-card p {
+  font-size: 0.8rem; /* Text size fo names */
+  color: hwb(133 39% 44%); /* Green color for text */
+  margin-top: 0.5rem;
 }
 
 .skill-card:hover {
-  background-color: hsl(220, 84%, 31%); /* Use a consistent hover color */
-  color: #f1f1f1; /* Light text color for contrast */
+  background-color: hwb(133, 39%, 44%); /* Green background on hover */
+  color: rgb(0, 0, 0); /* White text and icons on hover */
 }
+
+.skill-card:hover i,
+.skill-card:hover p {
+  color: rgb(0, 0, 0); /* Ensure icons and text turn white on hover */
+}
+
 
 /* Projects */
 .projects-container {
@@ -405,20 +412,39 @@ img {
   margin-bottom: 2rem;
 }
 
+/* Projects Grid */
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  display: flex; /* Align projects horizontally */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  gap: 2rem; /* Add spacing between project cards */
+  justify-content: center; /* Center the projects horizontally */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding-bottom: 1rem; /* Add padding for horizontal scroll */
 }
 
+.projects-grid::-webkit-scrollbar {
+  height: 8px; /* Set scrollbar height */
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background: hsl(133, 50%, 40%); /* Green scrollbar thumb */
+  border-radius: 10px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background for scrollbar track */
+}
+
+/* Project Card */
 .project-card {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #638f68;
+  background-color: hwb(115 25% 60%);
   padding: 2rem;
   border-radius: 10px;
-  margin: 2rem;
-  width: calc(55.333% - 4rem);
+  flex: 0 0 calc(300px); /* Fixed width for cards */
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Align content inside vertically */
 }
 
 .project-card .project-header {
@@ -430,7 +456,7 @@ img {
 
 .project-card .folder-icon {
   font-size: 25px;
-  color: hsl(247, 70%, 32%);
+  color: hwb(111 12% 78%);
 }
 
 .project-header .small-icons {
@@ -444,7 +470,7 @@ img {
 }
 
 .project-card .small-icons a:hover {
-  color: hsl(239, 76%, 30%);
+  color: rgb(247, 247, 247);
 }
 
 .project-card h3 {
@@ -455,8 +481,9 @@ img {
 .project-card p {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #b3b3b3;
+  color: hwb(0 100% 0%);
 }
+
 
 /* Contact */
 .contact-container {
@@ -486,7 +513,7 @@ img {
   border-radius: 5px;
   border: 1px solid #9B9C9D;
   margin-bottom: 1rem;
-  background-color: #2D2E30;
+  background-color: hsl(125, 18%, 51%);
   color: #DADADB;
   outline: none;
 }
@@ -497,7 +524,7 @@ img {
 
 .contact-button {
   display: inline-block;
-  background-color: hsl(235, 70%, 44%);
+  background-color: hwb(133 35% 43%);
   color: #1D1E20;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -515,6 +542,27 @@ img {
   font-size: 1rem;
   color: hsl(237, 78%, 50%);
 }
+
+/* Footer */
+.footer-container {
+  background-color: hwb(122 14% 66%); /* Baby pink background */
+  color: #000000; /* Black text */
+  padding: 1rem 2rem; /* Add spacing for a clean look */
+  text-align: center; /* Center-align the text */
+  font-size: 1rem; /* Footer text size */
+  font-weight: 400; /* Normal font weight */
+  border-top: 2px solid #000000; /* Add a black border at the top */
+}
+
+.footer-container p {
+  margin: 0; /* Remove default margin for clean alignment */
+}
+
+.footer-container a {
+  color: #000000; /* Black links for contrast */
+  text-decoration: underline; /* Underline links */
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
